@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="choose_measurement">Choose Measurement</string>
+    <string name="Tape">Measurement</string>
+    <string name="Weight">WeightMeasure</string>
+    <string name="Temp">Tempmeasure</string>
+
+    <string-array name="Units">
+        <item>Kilograms</item>
+        <item>Metre</item>
+        <item>Celsius</item>
+    </string-array>
+
+</resources>

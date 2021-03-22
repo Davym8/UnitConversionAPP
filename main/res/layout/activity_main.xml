@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="233dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:hint="@string/choose_measurement"
+            />
+
+        <EditText
+            android:id="@+id/numdec"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="-190dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/enter_value"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:autofillHints="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/result1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/measurement"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/result2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/measurement2"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/result3"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/measurement3"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton
+            android:id="@+id/kgbutton"
+            android:layout_width="75dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/Weight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tempbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/weight" />
+
+        <ImageButton
+            android:id="@+id/tempbutton"
+            android:layout_width="75dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/Temp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/temp" />
+
+        <ImageButton
+            android:id="@+id/lengthbutton"
+            android:layout_width="75dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/Tape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tempbutton"
+            app:srcCompat="@drawable/tape" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
